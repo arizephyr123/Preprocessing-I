@@ -1,1 +1,289 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/*Variables*/
+/*mixins*/
+.font-class {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
+.box-class {
+  text-align: center;
+  border: 0.1rem;
+}
+.padding-class {
+  padding: 0.7rem;
+}
+.mediaQs-class {
+  flex-direction: column;
+  max-width: 95vw;
+}
+.height-class {
+  height: 100%;
+}
+.mixin1 {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  border: 0.1rem;
+}
+.mixin2 {
+  padding: 0.7rem;
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 5%;
+}
+html,
+body {
+  padding: 0.7rem;
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
+.major {
+  display: flex;
+}
+/***Style for header section****/
+header {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  Width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  text-align: center;
+}
+header nav a:hover {
+  color: blue;
+}
+/***Style for top section****/
+.top {
+  height: 65vh;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*img style*/
+}
+.top .contact-section {
+  display: flex;
+  flex-direction: column;
+}
+.top .contact-section h3 {
+  padding: 0.7rem;
+  border-top: 0.5px solid grey;
+}
+.top img {
+  width: 40vw;
+  padding: 1.7rem 0.7rem 0.7rem 1.7rem;
+}
+.top h1 {
+  font-size: 2.3rem;
+  padding: 0.7rem 1.7rem;
+}
+.top h2 {
+  font-size: 1.1rem;
+  padding: 0.7rem 1.7rem;
+}
+/***Style for middle section****/
+.middle {
+  display: flex;
+}
+.middle .listenUp {
+  width: 50vw;
+}
+.middle .listenUp p {
+  padding: 0.7rem;
+}
+.middle .goodAt {
+  padding: 0.7rem;
+  width: 50vw;
+}
+.middle h2 {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.middle ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle ul li {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  border: 0.1rem;
+  line-break: 1.1;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.middle ul li:last-child {
+  border-bottom: 1px solid grey;
+}
+/***Style for bottom section****/
+.bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+.bottom h2 {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+/***Style for Table****/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+table th {
+  text-decoration: bold;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+footer {
+  /*mobile media query*/
+  background: blue;
+  text-align: center;
+  padding: 0.7rem;
+}
+@media only screen and (max-width: 500px) {
+  footer {
+    background-color: lightblue;
+  }
+}
