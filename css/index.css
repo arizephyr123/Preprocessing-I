@@ -183,6 +183,9 @@ header nav {
 header nav a {
   text-align: center;
 }
+header nav a:hover {
+  color: blue;
+}
 /***Style for top section****/
 .top {
   height: 65vh;
@@ -236,6 +239,8 @@ header nav a {
   justify-content: center;
 }
 .middle ul li {
+  color: grey;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   line-break: 1.1;
   border-top: 1px solid grey;
@@ -267,8 +272,7 @@ table th {
 }
 table th,
 table td {
-  text-align: center;
-  padding: 8px;
+  mixin1padding: 8px;
 }
 table tr:nth-child(even) {
   background-color: #f2f2f2;

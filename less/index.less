@@ -63,6 +63,7 @@ table {
 
   .box-class{
  text-align: center;
+ border: 0.1rem;
   }
 
   .padding-class{
@@ -122,9 +123,14 @@ header{
 
 		a{
 		text-align: center;
+		
+
+		&:hover{
+			// color: darken(@grey, 10%);
+			color: @blue;
 		}
 
-		
+	}
 	}
 }
 
@@ -199,7 +205,7 @@ img {
 		justify-content: center;
 	
 	li{
-		text-align: center;	
+		.mixin1();
 		line-break: 1.1;
 		border-top: 1px solid @grey;
 			border-left: 1px solid @grey;
@@ -238,8 +244,8 @@ table {
 	 }
 
 th, td {
-  text-align: center;
-  padding: 8px;
+  mixin1();
+
 }
 
 tr:nth-child(even){
