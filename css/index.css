@@ -127,13 +127,38 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+
 * {
   box-sizing: border-box;
+  border: 1px solid magenta !important;
 }
 html,
 body {
   height: 100%;
 }
+
+@blue: blue;
+@lightBlue: lightblue;
+
+/***Style for top section****/
+.top {
+  height: 65vh;
+  background-color: @lightBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/***Style for top section****/
+
+/***Style for top section****/
+
+
+
 /***Style for Table****/
 table {
   border-collapse: collapse;
