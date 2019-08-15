@@ -135,6 +135,7 @@ table {
 }
 .box-class {
   text-align: center;
+  border: 0.1rem;
 }
 .padding-class {
   padding: 0.7rem;
@@ -150,6 +151,7 @@ table {
   color: grey;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  border: 0.1rem;
 }
 .mixin2 {
   padding: 0.7rem;
@@ -242,6 +244,7 @@ header nav a:hover {
   color: grey;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  border: 0.1rem;
   line-break: 1.1;
   border-top: 1px solid grey;
   border-left: 1px solid grey;
@@ -270,10 +273,6 @@ table {
 table th {
   text-decoration: bold;
 }
-table th,
-table td {
-  mixin1padding: 8px;
-}
 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
@@ -283,7 +282,7 @@ footer {
   text-align: center;
   padding: 0.7rem;
 }
-@media screen (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   footer {
     background-color: lightblue;
   }
