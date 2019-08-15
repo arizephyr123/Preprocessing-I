@@ -127,14 +127,44 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+/*Variables*/
+/*mixins*/
+.font-class {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
+.box-class {
+  text-align: center;
+}
+.padding-class {
+  padding: 0.7rem;
+}
+.mediaQs-class {
+  flex-direction: column;
+  max-width: 95vw;
+}
+.height-class {
+  height: 100%;
+}
+.mixin1 {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+.mixin2 {
+  padding: 0.7rem;
+  color: grey;
+  font-family: 'Lato', sans-serif;
+}
 * {
   box-sizing: border-box;
   margin: 5%;
 }
 html,
 body {
-  height: 100%;
+  padding: 0.7rem;
   color: grey;
+  font-family: 'Lato', sans-serif;
 }
 .major {
   display: flex;
@@ -169,10 +199,6 @@ header nav a {
 .top .contact-section h3 {
   padding: 0.7rem;
   border-top: 0.5px solid grey;
-}
-.top .contact-section a {
-  display: flex;
-  padding: 0.7rem 0.7rem 0.7rem 1.7rem;
 }
 .top img {
   width: 40vw;
@@ -248,7 +274,13 @@ table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 footer {
+  /*mobile media query*/
   background: blue;
   text-align: center;
   padding: 0.7rem;
+}
+@media screen (max-width: 500px) {
+  footer {
+    background-color: lightblue;
+  }
 }
