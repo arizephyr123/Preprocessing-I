@@ -127,38 +127,108 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-
 * {
   box-sizing: border-box;
-  border: 1px solid magenta !important;
+  margin: 5%;
 }
 html,
 body {
   height: 100%;
+  color: grey;
 }
-
-@blue: blue;
-@lightBlue: lightblue;
-
+.major {
+  display: flex;
+}
+/***Style for header section****/
+header {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  Width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  text-align: center;
+}
 /***Style for top section****/
 .top {
   height: 65vh;
-  background-color: @lightBlue;
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-
-  h1 {
-    font-size: 2rem;
-  }
+  justify-content: space-between;
+  /*img style*/
 }
-
-/***Style for top section****/
-
-/***Style for top section****/
-
-
-
+.top .contact-section {
+  display: flex;
+  flex-direction: column;
+}
+.top .contact-section h3 {
+  padding: 0.7rem;
+  border-top: 0.5px solid grey;
+}
+.top .contact-section a {
+  display: flex;
+  padding: 0.7rem 0.7rem 0.7rem 1.7rem;
+}
+.top img {
+  width: 40vw;
+  padding: 1.7rem 0.7rem 0.7rem 1.7rem;
+}
+.top h1 {
+  font-size: 2.3rem;
+  padding: 0.7rem 1.7rem;
+}
+.top h2 {
+  font-size: 1.1rem;
+  padding: 0.7rem 1.7rem;
+}
+/***Style for middle section****/
+.middle {
+  display: flex;
+}
+.middle .listenUp {
+  width: 50vw;
+}
+.middle .listenUp p {
+  padding: 0.7rem;
+}
+.middle .goodAt {
+  padding: 0.7rem;
+  width: 50vw;
+}
+.middle h2 {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.middle ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle ul li {
+  text-align: center;
+  line-break: 1.1;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.middle ul li:last-child {
+  border-bottom: 1px solid grey;
+}
+/***Style for bottom section****/
+.bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+.bottom h2 {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
 /***Style for Table****/
 table {
   border-collapse: collapse;
@@ -166,10 +236,19 @@ table {
   width: 100%;
   border: 1px solid #ddd;
 }
-
-th, td {
-  text-align: left;
+table th {
+  text-decoration: bold;
+}
+table th,
+table td {
+  text-align: center;
   padding: 8px;
 }
-
-tr:nth-child(even){background-color: #f2f2f2}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+footer {
+  background: blue;
+  text-align: center;
+  padding: 0.7rem;
+}

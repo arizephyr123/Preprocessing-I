@@ -49,11 +49,167 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@blue: blue;
+@lightBlue: lightblue;
+@grey: grey;
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 5%;
+	// border: 1px solid magenta !important;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	color: @grey;
 }
 
+.major{
+	display: flex;
+}
+
+/***Style for header section****/
+
+header{ 
+	font-size: 0.9rem;
+	display: flex;
+	justify-content: flex-end;
+	
+	
+
+	nav {
+		Width: 33%;
+		display: flex;
+		justify-content: space-around;
+
+		a{
+		text-align: center;
+		}
+
+		
+	}
+}
+
+/***Style for top section****/
+.top {
+  height: 65vh;
+  background-color: @lightBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+/*img style*/
+
+ .contact-section {
+	display: flex;
+	flex-direction: column;
+
+	h3{
+		padding: 0.7rem;
+		border-top: 0.5px solid @grey;
+	}
+	a{
+			display: flex;
+	padding: 0.7rem 0.7rem 0.7rem 1.7rem;
+	}
+}
+
+img {
+	width: 40vw;
+	padding: 1.7rem 0.7rem 0.7rem 1.7rem;
+}
+  h1 {
+	font-size: 2.3rem;
+	padding: 0.7rem 1.7rem; 
+  }
+
+  h2 {
+ font-size: 1.1rem;
+ padding: 0.7rem 1.7rem; 
+  }
+// address{
+// 	display: flex;
+// 	padding: 0.7rem 0.7rem 0.7rem 1.7rem;
+
+// }
+
+}
+
+/***Style for middle section****/
+.middle {
+	display: flex;
+
+	.listenUp {
+		width: 50vw;
+		p{
+		padding: 0.7rem;
+		}
+	}
+	.goodAt {
+		padding: 0.7rem;
+		width: 50vw;
+	}
+	
+	h2 {
+		font-size: 1.2rem;
+		 padding: 0.7rem; 
+	}
+	ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+	li{
+		text-align: center;	
+		line-break: 1.1;
+		border-top: 1px solid @grey;
+			border-left: 1px solid @grey;
+			border-right: 1px solid @grey;
+		}
+		li:last-child{
+			border-bottom: 1px solid @grey;
+		}
+	}
+}
+
+
+
+/***Style for bottom section****/
+.bottom {
+	display: flex;
+	flex-direction: column;
+	padding: 0.7rem;
+	h2{
+		font-size: 1.2rem;
+		padding: 0.7rem; 	
+	}
+
+}
+
+/***Style for Table****/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  
+  th {
+	  text-decoration: bold; 
+	 }
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2
+}
+}
+
+footer {
+	background: @blue;
+	text-align: center;
+	padding: 0.7rem;
+}
